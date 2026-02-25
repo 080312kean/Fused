@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #aaccff;
+            text-align: left;
+        }
+        h1 {
+            text-shadow: -2px 2px 10px rgba(0, 0, 127, 0.8);
+        }
+        button {
+            padding: 15px;
+            margin: 10px;
+            border: none;
+        }
+        table {
+            width: 100%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        button {
+            font-weight: 600;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+        }
+        button:hover {
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+        }
+        table, th, td {
+            border: none;
+            border-collapse: collapse;
+            padding: 10px;
+            font-weight: 600;
+        }
+    
+        th:last-child, td:last-child {
+            text-align: center;
+        }
+
+        tr:not(:first-child):nth-child(even) {
+            background-color: #0000001F;
+        }
+        tr:not(:first-child):nth-child(odd) {
+            background-color: #FFFFFF1F;
+        }
+        tr:first-child {
+            background-color: #FFFFFF3F;
+        }
+        td:last-child {
+            background-color: #ff7777bb;
+            color: #FFFFFF;
+        }
+        td:last-child:hover {
+            background-color: #dd5555bb;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fused3d Asset Importer (Audio, Image, Text)</h1>
+    <button id="FileSelectorButton">Upload Files</button>
+    <input type="file" id="FileSelectorInput" multiple hidden accept="audio/*, image/*, text/*">
+    <button id="Button" style="background-color:rgb(19, 142, 101); color:#FFFFFF">Download</button>
+    <a href="" id="Link" style="display:none"></a>
+    <table id="FileList">
+        <tr>
+            <th>Name</th>
+            <th>Size</th>
+            <th>X</th>
+        </tr>
+    </table>
+    <script src="converter.js"></script>
+</body>
+</html>
