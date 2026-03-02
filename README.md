@@ -22,3 +22,4 @@
 | Day | Description |
 | ----------- | ----------- |
 | 01 | <ul><li>Rewrote IDE to separate hovering, selection, and rendering</li><li>Rehashing implemented</li></ul>|
+| 02 | <ul><li>Rewrote IDE to use a layout tree instead of individual widgets</li></ul>|
